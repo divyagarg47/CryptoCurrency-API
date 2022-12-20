@@ -57,7 +57,7 @@ async function getPriceFeed() {
 
 const app = express()
 
-app.get('/api/price-feed', async (req, res) => {
+app.get('/api/price', async (req, res) => {
     try {
         const priceFeed = await getPriceFeed()
         return res.status(200).json({
